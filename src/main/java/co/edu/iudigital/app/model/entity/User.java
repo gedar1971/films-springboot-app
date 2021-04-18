@@ -13,10 +13,14 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Column;
 
 @Entity
-@Table(name = "user")
+@Table(name = "usuario")
 
 public class User implements Serializable{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "user_id")
